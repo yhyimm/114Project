@@ -11,9 +11,23 @@ public class Letters implements operations{
     Letters(String inputString, String outputString){
         this.inputString = inputString;
         this.outputString = outputString;
-        String [] splitted = inputString.split("");
+       
     }
 
+
+    public void Operation (){
+        String [] splittedInput = inputString.split("");
+        String [] splittedOutput = outputString.split("");
+        if (splittedInput.length==0||splittedOutput.length==0){
+            System.out.println("Invalid input");
+            return;
+        }
+
+        
+
+    
+
+    }
  
 
     public void add(){
