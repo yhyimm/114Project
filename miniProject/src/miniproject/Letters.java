@@ -15,18 +15,24 @@ public class Letters implements operations{
     }
 
 
-    public void Operation (){
+    public String Operation (){
         String [] splittedInput = inputString.split("");
         String [] splittedOutput = outputString.split("");
         if (splittedInput.length==0||splittedOutput.length==0){
-            System.out.println("Invalid input");
-            return;
+           // System.out.println();
+            return "Invalid input";
         }
 
-        
+        while (splittedInput.length!=0){
+            if (splittedInput.equals(splittedOutput)){
+                return inputString;
+            }
+            
+
+        }
 
     
-
+            return "";
     }
  
 
